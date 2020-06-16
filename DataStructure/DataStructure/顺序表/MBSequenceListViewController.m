@@ -8,9 +8,12 @@
 
 #import "MBSequenceListViewController.h"
 
-@interface MBSequenceListViewController ()
+typedef struct {
+    int data[20];
+    int length;
+} SqList;
 
-@end
+static SqList sl;
 
 @implementation MBSequenceListViewController
 
@@ -18,28 +21,111 @@
     [super viewDidLoad];
 }
 
-- (IBAction)create:(id)sender {
+void createList(SqList *L, int a[], int n)
+{
+    initList(L);
+    for (int i = 0; i < n; i++) {
+        L->data[i] = a[i];
+    }
+    L->length = n;
     
 }
 
-- (IBAction)add:(id)sender {
-    
+void initList(SqList *L)
+{
+    *L = *(SqList *)malloc(sizeof(SqList));
+    L->length = 0;
 }
 
-- (IBAction)delete:(id)sender {
-    
+void destroyList(SqList *L)
+{
+    free(L);
 }
 
-- (IBAction)update:(id)sender {
-    
+BOOL isEmptyList(SqList *L)
+{
+    return L->length;;
 }
 
-- (IBAction)look:(id)sender {
-    
+void dispalyList(SqList *L)
+{
+    for (int i = 0; i < L->length; i++) {
+        printf("%d\n", L->data[i]);
+    }
+    printf("=======================\n");
 }
 
-- (IBAction)print:(id)sender {
-    
+void insertList(SqList *L, int index, int value)
+{
+    if (index < 1 || index > L->length) {
+        return;
+    }
+    for (int j = L->length; j > index-1; j--) {
+        L->data[j] = L->data[j-1];
+    }
+    L->data[index-1] = value;
+    L->length++;
+}
+
+void removeList(SqList *L, int index)
+{
+    if (index < 1 || index > L->length) {
+        return;
+    }
+    for (int j = index; j < L->length; j++) {
+        L->data[j-1] = L->data[j];
+    }
+    L->length--;
+}
+
+void updateList(SqList *L, int index, int value)
+{
+    if (index < 1 || index > L->length) {
+        return;
+    }
+    L->data[index] = value;
+}
+
+int queryList(SqList *L, int index)
+{
+    if (index < 1 || index > L->length) {
+        return 0;
+    }
+    return L->data[index];
+}
+
+
+- (IBAction)create:(id)sender
+{
+    SqList L;
+    int a[10] = {1,2,3,4,5,6,7,8,9,10};
+    createList(&L, a, 10);
+    sl = L;
+}
+
+- (IBAction)add:(id)sender
+{
+    insertList(&sl, 5, 100);
+}
+
+- (IBAction)delete:(id)sender
+{
+    removeList(&sl, 5);
+}
+
+- (IBAction)update:(id)sender
+{
+    updateList(&sl, 5, 200);
+}
+
+- (IBAction)look:(id)sender
+{
+    printf("%d\n", queryList(&sl, 5));
+}
+
+- (IBAction)print:(id)sender
+{
+    dispalyList(&sl);
 }
 
 
