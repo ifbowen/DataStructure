@@ -13,7 +13,11 @@ typedef struct {
     int length;
 } SqList;
 
-static SqList sl;
+@interface MBSequenceListViewController ()
+
+@property (nonatomic, assign) SqList sl;
+
+@end
 
 @implementation MBSequenceListViewController
 
@@ -33,7 +37,7 @@ void createList(SqList *L, int a[], int n)
 
 void initList(SqList *L)
 {
-    *L = *(SqList *)malloc(sizeof(SqList));
+    L = (SqList *)malloc(sizeof(SqList));
     L->length = 0;
 }
 
@@ -50,9 +54,9 @@ BOOL isEmptyList(SqList *L)
 void dispalyList(SqList *L)
 {
     for (int i = 0; i < L->length; i++) {
-        printf("%d\n", L->data[i]);
+        printf("%d ", L->data[i]);
     }
-    printf("=======================\n");
+    printf("\n=======================\n");
 }
 
 void insertList(SqList *L, int index, int value)
@@ -100,32 +104,32 @@ int queryList(SqList *L, int index)
     SqList L;
     int a[10] = {1,2,3,4,5,6,7,8,9,10};
     createList(&L, a, 10);
-    sl = L;
+    _sl = L;
 }
 
 - (IBAction)add:(id)sender
 {
-    insertList(&sl, 5, 100);
+    insertList(&_sl, 5, 100);
 }
 
 - (IBAction)delete:(id)sender
 {
-    removeList(&sl, 5);
+    removeList(&_sl, 5);
 }
 
 - (IBAction)update:(id)sender
 {
-    updateList(&sl, 5, 200);
+    updateList(&_sl, 5, 200);
 }
 
 - (IBAction)look:(id)sender
 {
-    printf("%d\n", queryList(&sl, 5));
+    printf("%d\n", queryList(&_sl, 5));
 }
 
 - (IBAction)print:(id)sender
 {
-    dispalyList(&sl);
+    dispalyList(&_sl);
 }
 
 
