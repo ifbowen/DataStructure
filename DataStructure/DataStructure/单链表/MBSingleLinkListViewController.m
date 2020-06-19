@@ -101,6 +101,62 @@ void displaySingleLinkList(LinkList *list)
     printf("\n=======================\n");
 }
 
+// 只遍历一次就找到链表中的中间节点, fathNode的偏移速度是slowNode的两倍
+void centerNodeOfSingleLinkList(LinkList *list)
+{
+    LinkList *fastNode = list;
+    LinkList *slowNode = list;
+    while (fastNode != NULL) {
+        fastNode = fastNode->next->next;
+        slowNode = slowNode->next;
+    }
+    printf("中间节点：%d\n", slowNode->value);
+}
+
+// https://mp.weixin.qq.com/s/lVrQnCMbbbHD8eHpApeg3g
+void isLoopSingleLinkList(LinkList *list)
+{
+    int length = 0;
+    LinkList *fastNode = list;
+    LinkList *slowNode = list;
+    LinkList *firstMeetNode = list;
+    LinkList *startNode = list;
+    
+    // 判断有环
+    while (fastNode != NULL && slowNode != NULL) {
+        fastNode = fastNode->next->next;
+        slowNode = slowNode->next;
+        if (fastNode == slowNode) {
+            firstMeetNode = fastNode;
+            printf("有环\n");
+            break;
+        }
+    }
+    
+    // 入口节点
+    while (startNode != NULL && slowNode != NULL) {
+        startNode = startNode->next;
+        slowNode = slowNode->next;
+        length++;
+        if (startNode == slowNode) {
+            printf("入口节点\n");
+            break;
+        }
+    }
+    
+    // 判断环的长度
+    while (startNode != NULL) {
+        if (startNode == firstMeetNode) {
+            break;
+        } else {
+            startNode = startNode->next;
+            length++;
+        }
+    }
+    
+    
+}
+
 - (IBAction)headerCreate:(id)sender
 {
     int a[10] = {1,2,3,4,5,6,7,8,9,10};
@@ -134,6 +190,16 @@ void displaySingleLinkList(LinkList *list)
 }
 
 - (IBAction)look:(id)sender
+{
+    
+}
+
+- (IBAction)centerNode:(id)sender
+{
+    centerNodeOfSingleLinkList(&_node);
+}
+
+- (IBAction)isLoop:(id)sender
 {
     
 }

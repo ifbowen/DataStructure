@@ -116,6 +116,34 @@
                         <action selector="display:" destination="-1" eventType="touchUpInside" id="kf4-2h-nJ9"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvh-FP-BlQ">
+                    <rect key="frame" x="60" y="228" width="80" height="40"/>
+                    <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="HCf-b9-p2m"/>
+                        <constraint firstAttribute="height" constant="40" id="b3Z-6H-GMS"/>
+                    </constraints>
+                    <state key="normal" title="中间节点">
+                        <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </state>
+                    <connections>
+                        <action selector="centerNode:" destination="-1" eventType="touchUpInside" id="qbg-QR-KHS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U17-TO-r3Q">
+                    <rect key="frame" x="274" y="228" width="80" height="40"/>
+                    <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="aET-TI-DRD"/>
+                        <constraint firstAttribute="height" constant="40" id="scB-4M-erb"/>
+                    </constraints>
+                    <state key="normal" title="是否有环">
+                        <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </state>
+                    <connections>
+                        <action selector="isLoop:" destination="-1" eventType="touchUpInside" id="529-mt-9YX"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -123,14 +151,18 @@
                 <constraint firstItem="FP3-mS-WY9" firstAttribute="leading" secondItem="aNs-HJ-TJj" secondAttribute="leading" id="82u-oc-rxu"/>
                 <constraint firstItem="BR1-zq-VgK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="A8j-nf-MpO"/>
                 <constraint firstItem="FP3-mS-WY9" firstAttribute="leading" secondItem="BR1-zq-VgK" secondAttribute="leading" id="CXQ-D4-vrH"/>
+                <constraint firstItem="U17-TO-r3Q" firstAttribute="top" secondItem="hIW-jN-d0r" secondAttribute="bottom" constant="80" id="L18-PV-ReK"/>
                 <constraint firstItem="BR1-zq-VgK" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="120" id="Nmg-Fz-gLo"/>
                 <constraint firstItem="Hl4-ks-zDX" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="60" id="QpG-5M-BTC"/>
+                <constraint firstItem="xvh-FP-BlQ" firstAttribute="top" secondItem="Hl4-ks-zDX" secondAttribute="bottom" constant="80" id="Quw-bc-hPF"/>
                 <constraint firstItem="FP3-mS-WY9" firstAttribute="leading" secondItem="9uT-se-6nk" secondAttribute="leading" id="UUN-n7-HE2"/>
                 <constraint firstItem="4za-Wt-NYU" firstAttribute="top" secondItem="BR1-zq-VgK" secondAttribute="bottom" constant="20" id="Zu5-G0-LOC"/>
                 <constraint firstItem="Hl4-ks-zDX" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="60" id="dOx-F5-5bb"/>
+                <constraint firstItem="xvh-FP-BlQ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="60" id="g4v-BS-BDD"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="hIW-jN-d0r" secondAttribute="trailing" constant="60" id="g5r-cp-4kZ"/>
                 <constraint firstItem="9uT-se-6nk" firstAttribute="top" secondItem="FP3-mS-WY9" secondAttribute="bottom" constant="20" id="hAb-zZ-wMX"/>
                 <constraint firstItem="FP3-mS-WY9" firstAttribute="top" secondItem="aNs-HJ-TJj" secondAttribute="bottom" constant="20" id="qCA-xU-ApC"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="U17-TO-r3Q" secondAttribute="trailing" constant="60" id="sqB-Ur-S9W"/>
                 <constraint firstItem="aNs-HJ-TJj" firstAttribute="top" secondItem="4za-Wt-NYU" secondAttribute="bottom" constant="20" id="uNi-eQ-D7v"/>
                 <constraint firstItem="FP3-mS-WY9" firstAttribute="leading" secondItem="4za-Wt-NYU" secondAttribute="leading" id="xb0-L8-7O4"/>
             </constraints>
