@@ -18,6 +18,8 @@
 		4A82A2132497AADF00CD3B5A /* MBSequenceListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A82A2122497AADF00CD3B5A /* MBSequenceListViewController.xib */; };
 		4AD24F23249A33D90004FBA4 /* MBSingleLinkListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD24F21249A33D90004FBA4 /* MBSingleLinkListViewController.m */; };
 		4AD24F24249A33D90004FBA4 /* MBSingleLinkListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AD24F22249A33D90004FBA4 /* MBSingleLinkListViewController.xib */; };
+		4AD263AA249B984A0004FBA4 /* MBDoubleLinkListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD263A9249B984A0004FBA4 /* MBDoubleLinkListViewController.m */; };
+		4AD263AC249B98EF0004FBA4 /* MBDoubleLinkListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AD263AB249B98EF0004FBA4 /* MBDoubleLinkListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,9 @@
 		4AD24F20249A33D90004FBA4 /* MBSingleLinkListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBSingleLinkListViewController.h; sourceTree = "<group>"; };
 		4AD24F21249A33D90004FBA4 /* MBSingleLinkListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBSingleLinkListViewController.m; sourceTree = "<group>"; };
 		4AD24F22249A33D90004FBA4 /* MBSingleLinkListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBSingleLinkListViewController.xib; sourceTree = "<group>"; };
+		4AD263A8249B984A0004FBA4 /* MBDoubleLinkListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBDoubleLinkListViewController.h; sourceTree = "<group>"; };
+		4AD263A9249B984A0004FBA4 /* MBDoubleLinkListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBDoubleLinkListViewController.m; sourceTree = "<group>"; };
+		4AD263AB249B98EF0004FBA4 /* MBDoubleLinkListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBDoubleLinkListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +82,7 @@
 				4A82A1FA2497A10A00CD3B5A /* SceneDelegate.m */,
 				4A82A1FC2497A10A00CD3B5A /* ViewController.h */,
 				4A82A1FD2497A10A00CD3B5A /* ViewController.m */,
+				4AD263A7249B980D0004FBA4 /* 双链表 */,
 				4AD24F1F249A334E0004FBA4 /* 单链表 */,
 				4A82A5922497B1FC00CD3B5A /* 顺序表 */,
 				4A82A1FF2497A10A00CD3B5A /* Main.storyboard */,
@@ -106,6 +112,16 @@
 				4AD24F22249A33D90004FBA4 /* MBSingleLinkListViewController.xib */,
 			);
 			path = "单链表";
+			sourceTree = "<group>";
+		};
+		4AD263A7249B980D0004FBA4 /* 双链表 */ = {
+			isa = PBXGroup;
+			children = (
+				4AD263A8249B984A0004FBA4 /* MBDoubleLinkListViewController.h */,
+				4AD263A9249B984A0004FBA4 /* MBDoubleLinkListViewController.m */,
+				4AD263AB249B98EF0004FBA4 /* MBDoubleLinkListViewController.xib */,
+			);
+			path = "双链表";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD263AC249B98EF0004FBA4 /* MBDoubleLinkListViewController.xib in Resources */,
 				4A82A2132497AADF00CD3B5A /* MBSequenceListViewController.xib in Resources */,
 				4AD24F24249A33D90004FBA4 /* MBSingleLinkListViewController.xib in Resources */,
 				4A82A2062497A10F00CD3B5A /* LaunchScreen.storyboard in Resources */,
@@ -182,6 +199,7 @@
 			files = (
 				4A82A1FE2497A10A00CD3B5A /* ViewController.m in Sources */,
 				4A82A2112497AA1400CD3B5A /* MBSequenceListViewController.m in Sources */,
+				4AD263AA249B984A0004FBA4 /* MBDoubleLinkListViewController.m in Sources */,
 				4A82A1F82497A10A00CD3B5A /* AppDelegate.m in Sources */,
 				4A82A2092497A10F00CD3B5A /* main.m in Sources */,
 				4AD24F23249A33D90004FBA4 /* MBSingleLinkListViewController.m in Sources */,

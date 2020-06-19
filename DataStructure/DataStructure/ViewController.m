@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "MBSequenceListViewController.h"
 #import "MBSingleLinkListViewController.h"
+#import "MBDoubleLinkListViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -34,7 +35,7 @@
 
 - (void)setupData
 {
-    self.tableArray = @[@"顺序表", @"单链表"];
+    self.tableArray = @[@"顺序表", @"单链表", @"双链表"];
 }
 
 - (void)setupUI
@@ -77,6 +78,10 @@
     if (indexPath.row == 1) {
         vc = [[MBSingleLinkListViewController alloc] init];
         vc.navigationItem.title = @"单链表";
+    }
+    if (indexPath.row == 2) {
+        vc = [[MBDoubleLinkListViewController alloc] init];
+        vc.navigationItem.title = @"双链表";
     }
     [self.navigationController pushViewController:vc animated:YES];
 }

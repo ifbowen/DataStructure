@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MBDoubleLinkListViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="OVk-Ea-EZR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SnE-gk-uCU">
+                    <rect key="frame" x="167" y="124" width="80" height="40"/>
+                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="1nF-DK-1V1"/>
+                        <constraint firstAttribute="height" constant="40" id="QTA-jT-PMC"/>
+                    </constraints>
+                    <state key="normal" title="尾插法">
+                        <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="tailCreateDoubleLink:" destination="-1" eventType="touchUpInside" id="4Z4-EP-Ixl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1k-h5-M2n">
+                    <rect key="frame" x="167" y="244" width="80" height="40"/>
+                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ZZQ-Xi-Aag"/>
+                        <constraint firstAttribute="width" constant="80" id="cAO-Em-NPr"/>
+                    </constraints>
+                    <state key="normal" title="增">
+                        <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="add:" destination="-1" eventType="touchUpInside" id="e0o-99-wMJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="but-RR-awC">
+                    <rect key="frame" x="167" y="304" width="80" height="40"/>
+                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="FxW-lX-gk1"/>
+                        <constraint firstAttribute="width" constant="80" id="Z4y-dp-0XN"/>
+                    </constraints>
+                    <state key="normal" title="删">
+                        <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="remove:" destination="-1" eventType="touchUpInside" id="Z4T-qT-vfB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgM-5x-i7g">
+                    <rect key="frame" x="167" y="364" width="80" height="40"/>
+                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="CFL-j0-jEs"/>
+                        <constraint firstAttribute="width" constant="80" id="qmV-ZM-8YR"/>
+                    </constraints>
+                    <state key="normal" title="打印">
+                        <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="print:" destination="-1" eventType="touchUpInside" id="HL2-je-DEP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5X-UM-HgJ">
+                    <rect key="frame" x="167" y="184" width="80" height="40"/>
+                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="3DU-UQ-cfB"/>
+                        <constraint firstAttribute="height" constant="40" id="SV6-2d-hT4"/>
+                    </constraints>
+                    <state key="normal" title="头插法">
+                        <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="headerCreateDoubleLink:" destination="-1" eventType="touchUpInside" id="9TW-e4-dlx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5Ze-7v-aup"/>
+                <constraint firstItem="but-RR-awC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9Lk-ef-q53"/>
+                <constraint firstItem="B1k-h5-M2n" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="AFS-Hk-qJ5"/>
+                <constraint firstItem="SnE-gk-uCU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JVU-oF-5TT"/>
+                <constraint firstItem="but-RR-awC" firstAttribute="top" secondItem="B1k-h5-M2n" secondAttribute="bottom" constant="20" id="PvR-Ag-QOg"/>
+                <constraint firstItem="IgM-5x-i7g" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Q6e-1w-ksV"/>
+                <constraint firstItem="IgM-5x-i7g" firstAttribute="top" secondItem="but-RR-awC" secondAttribute="bottom" constant="20" id="SKc-u4-1uZ"/>
+                <constraint firstItem="B1k-h5-M2n" firstAttribute="top" secondItem="A5X-UM-HgJ" secondAttribute="bottom" constant="20" id="hhx-hu-8mR"/>
+                <constraint firstItem="SnE-gk-uCU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="80" id="jSH-6n-0gv"/>
+                <constraint firstItem="A5X-UM-HgJ" firstAttribute="top" secondItem="SnE-gk-uCU" secondAttribute="bottom" constant="20" id="mnz-pd-uga"/>
+                <constraint firstItem="A5X-UM-HgJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="riE-dp-89o"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="107.8125"/>
+        </view>
+    </objects>
+</document>
