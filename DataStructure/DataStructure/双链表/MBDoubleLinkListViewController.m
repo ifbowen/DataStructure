@@ -111,6 +111,7 @@ void removeDLink(DLinkList *list, int index)
     p->pre->next = p->next;
     p->next->pre = p->pre;
     
+    free(p);
 }
 
 void displayDlink(DLinkList *list)
