@@ -10,6 +10,9 @@
 #import "MBSequenceListViewController.h"
 #import "MBSingleLinkListViewController.h"
 #import "MBDoubleLinkListViewController.h"
+#import "MBBinaryTreeViewController.h"
+#import "MBHeapViewController.h"
+#import "MBStackViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -35,7 +38,7 @@
 
 - (void)setupData
 {
-    self.tableArray = @[@"顺序表", @"单链表", @"双链表"];
+    self.tableArray = @[@"顺序表", @"单链表", @"双链表", @"堆", @"栈", @"二叉树"];
 }
 
 - (void)setupUI
@@ -83,6 +86,19 @@
         vc = [[MBDoubleLinkListViewController alloc] init];
         vc.navigationItem.title = @"双链表";
     }
+    if (indexPath.row == 3) {
+        vc = [[MBHeapViewController alloc] init];
+        vc.navigationItem.title = @"堆";
+    }
+    if (indexPath.row == 4) {
+        vc = [[MBStackViewController alloc] init];
+        vc.navigationItem.title = @"栈";
+    }
+    if (indexPath.row == 5) {
+        vc = [[MBBinaryTreeViewController alloc] init];
+        vc.navigationItem.title = @"二叉树";
+    }
+    
     [self.navigationController pushViewController:vc animated:YES];
 }
 
