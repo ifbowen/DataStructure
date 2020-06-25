@@ -38,7 +38,7 @@
 
 - (void)setupData
 {
-    self.tableArray = @[@"顺序表", @"单链表", @"双链表", @"队列", @"栈", @"二叉树"];
+    self.tableArray = @[@"顺序表", @"单链表", @"双链表", @"队列", @"栈", @"串", @"二叉树"];
 }
 
 - (void)setupUI

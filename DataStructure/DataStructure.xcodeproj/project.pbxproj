@@ -26,6 +26,8 @@
 		4AD24F24249A33D90004FBA4 /* MBSingleLinkListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AD24F22249A33D90004FBA4 /* MBSingleLinkListViewController.xib */; };
 		4AD263AA249B984A0004FBA4 /* MBDoubleLinkListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD263A9249B984A0004FBA4 /* MBDoubleLinkListViewController.m */; };
 		4AD263AC249B98EF0004FBA4 /* MBDoubleLinkListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AD263AB249B98EF0004FBA4 /* MBDoubleLinkListViewController.xib */; };
+		F367DEE724A50ECB002556F0 /* MBStringViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F367DEE624A50ECB002556F0 /* MBStringViewController.mm */; };
+		F367DEE924A50EED002556F0 /* MBStringViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F367DEE824A50EED002556F0 /* MBStringViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,9 @@
 		4AD263A8249B984A0004FBA4 /* MBDoubleLinkListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBDoubleLinkListViewController.h; sourceTree = "<group>"; };
 		4AD263A9249B984A0004FBA4 /* MBDoubleLinkListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBDoubleLinkListViewController.m; sourceTree = "<group>"; };
 		4AD263AB249B98EF0004FBA4 /* MBDoubleLinkListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBDoubleLinkListViewController.xib; sourceTree = "<group>"; };
+		F367DEE524A50ECB002556F0 /* MBStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBStringViewController.h; sourceTree = "<group>"; };
+		F367DEE624A50ECB002556F0 /* MBStringViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MBStringViewController.mm; sourceTree = "<group>"; };
+		F367DEE824A50EED002556F0 /* MBStringViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBStringViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +102,13 @@
 				4A82A1FA2497A10A00CD3B5A /* SceneDelegate.m */,
 				4A82A1FC2497A10A00CD3B5A /* ViewController.h */,
 				4A82A1FD2497A10A00CD3B5A /* ViewController.m */,
-				4A8A796F24A351BC00D086E9 /* 队列 */,
-				4A8A796E24A351B300D086E9 /* 栈 */,
-				4A8A796824A344AF00D086E9 /* 二叉树 */,
-				4AD263A7249B980D0004FBA4 /* 双链表 */,
-				4AD24F1F249A334E0004FBA4 /* 单链表 */,
 				4A82A5922497B1FC00CD3B5A /* 顺序表 */,
+				4AD24F1F249A334E0004FBA4 /* 单链表 */,
+				4AD263A7249B980D0004FBA4 /* 双链表 */,
+				4A8A796E24A351B300D086E9 /* 栈 */,
+				4A8A796F24A351BC00D086E9 /* 队列 */,
+				F367DEE424A50E90002556F0 /* 串 */,
+				4A8A796824A344AF00D086E9 /* 二叉树 */,
 				4A82A1FF2497A10A00CD3B5A /* Main.storyboard */,
 				4A82A2022497A10F00CD3B5A /* Assets.xcassets */,
 				4A82A2042497A10F00CD3B5A /* LaunchScreen.storyboard */,
@@ -172,6 +178,16 @@
 			path = "双链表";
 			sourceTree = "<group>";
 		};
+		F367DEE424A50E90002556F0 /* 串 */ = {
+			isa = PBXGroup;
+			children = (
+				F367DEE524A50ECB002556F0 /* MBStringViewController.h */,
+				F367DEE624A50ECB002556F0 /* MBStringViewController.mm */,
+				F367DEE824A50EED002556F0 /* MBStringViewController.xib */,
+			);
+			path = "串";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -231,6 +247,7 @@
 			files = (
 				4AD263AC249B98EF0004FBA4 /* MBDoubleLinkListViewController.xib in Resources */,
 				4A8A796D24A3452200D086E9 /* MBBinaryTreeViewController.xib in Resources */,
+				F367DEE924A50EED002556F0 /* MBStringViewController.xib in Resources */,
 				4A82A2132497AADF00CD3B5A /* MBSequenceListViewController.xib in Resources */,
 				4AD24F24249A33D90004FBA4 /* MBSingleLinkListViewController.xib in Resources */,
 				4A82A2062497A10F00CD3B5A /* LaunchScreen.storyboard in Resources */,
@@ -258,6 +275,7 @@
 				4A82A2092497A10F00CD3B5A /* main.m in Sources */,
 				4AD24F23249A33D90004FBA4 /* MBSingleLinkListViewController.m in Sources */,
 				4A82A1FB2497A10A00CD3B5A /* SceneDelegate.m in Sources */,
+				F367DEE724A50ECB002556F0 /* MBStringViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
