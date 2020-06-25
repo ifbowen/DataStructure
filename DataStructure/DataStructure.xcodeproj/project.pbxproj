@@ -18,10 +18,10 @@
 		4A82A2132497AADF00CD3B5A /* MBSequenceListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A82A2122497AADF00CD3B5A /* MBSequenceListViewController.xib */; };
 		4A8A796B24A3450000D086E9 /* MBBinaryTreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8A796A24A3450000D086E9 /* MBBinaryTreeViewController.m */; };
 		4A8A796D24A3452200D086E9 /* MBBinaryTreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8A796C24A3452200D086E9 /* MBBinaryTreeViewController.xib */; };
-		4A8A797324A351EF00D086E9 /* MBStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8A797124A351EF00D086E9 /* MBStackViewController.m */; };
+		4A8A797324A351EF00D086E9 /* MBStackViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A8A797124A351EF00D086E9 /* MBStackViewController.mm */; };
 		4A8A797424A351EF00D086E9 /* MBStackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8A797224A351EF00D086E9 /* MBStackViewController.xib */; };
-		4A8A797824A3526300D086E9 /* MBHeapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8A797624A3526300D086E9 /* MBHeapViewController.m */; };
-		4A8A797924A3526300D086E9 /* MBHeapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8A797724A3526300D086E9 /* MBHeapViewController.xib */; };
+		4A8A797824A3526300D086E9 /* MBQueueViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A8A797624A3526300D086E9 /* MBQueueViewController.mm */; };
+		4A8A797924A3526300D086E9 /* MBQueueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8A797724A3526300D086E9 /* MBQueueViewController.xib */; };
 		4AD24F23249A33D90004FBA4 /* MBSingleLinkListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD24F21249A33D90004FBA4 /* MBSingleLinkListViewController.m */; };
 		4AD24F24249A33D90004FBA4 /* MBSingleLinkListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AD24F22249A33D90004FBA4 /* MBSingleLinkListViewController.xib */; };
 		4AD263AA249B984A0004FBA4 /* MBDoubleLinkListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD263A9249B984A0004FBA4 /* MBDoubleLinkListViewController.m */; };
@@ -48,11 +48,11 @@
 		4A8A796A24A3450000D086E9 /* MBBinaryTreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBBinaryTreeViewController.m; sourceTree = "<group>"; };
 		4A8A796C24A3452200D086E9 /* MBBinaryTreeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBBinaryTreeViewController.xib; sourceTree = "<group>"; };
 		4A8A797024A351EF00D086E9 /* MBStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBStackViewController.h; sourceTree = "<group>"; };
-		4A8A797124A351EF00D086E9 /* MBStackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBStackViewController.m; sourceTree = "<group>"; };
+		4A8A797124A351EF00D086E9 /* MBStackViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MBStackViewController.mm; sourceTree = "<group>"; };
 		4A8A797224A351EF00D086E9 /* MBStackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBStackViewController.xib; sourceTree = "<group>"; };
-		4A8A797524A3526300D086E9 /* MBHeapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBHeapViewController.h; sourceTree = "<group>"; };
-		4A8A797624A3526300D086E9 /* MBHeapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBHeapViewController.m; sourceTree = "<group>"; };
-		4A8A797724A3526300D086E9 /* MBHeapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBHeapViewController.xib; sourceTree = "<group>"; };
+		4A8A797524A3526300D086E9 /* MBQueueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBQueueViewController.h; sourceTree = "<group>"; };
+		4A8A797624A3526300D086E9 /* MBQueueViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MBQueueViewController.mm; sourceTree = "<group>"; };
+		4A8A797724A3526300D086E9 /* MBQueueViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBQueueViewController.xib; sourceTree = "<group>"; };
 		4AD24F20249A33D90004FBA4 /* MBSingleLinkListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBSingleLinkListViewController.h; sourceTree = "<group>"; };
 		4AD24F21249A33D90004FBA4 /* MBSingleLinkListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBSingleLinkListViewController.m; sourceTree = "<group>"; };
 		4AD24F22249A33D90004FBA4 /* MBSingleLinkListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBSingleLinkListViewController.xib; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 				4A82A1FA2497A10A00CD3B5A /* SceneDelegate.m */,
 				4A82A1FC2497A10A00CD3B5A /* ViewController.h */,
 				4A82A1FD2497A10A00CD3B5A /* ViewController.m */,
-				4A8A796F24A351BC00D086E9 /* 堆 */,
+				4A8A796F24A351BC00D086E9 /* 队列 */,
 				4A8A796E24A351B300D086E9 /* 栈 */,
 				4A8A796824A344AF00D086E9 /* 二叉树 */,
 				4AD263A7249B980D0004FBA4 /* 双链表 */,
@@ -136,20 +136,20 @@
 			isa = PBXGroup;
 			children = (
 				4A8A797024A351EF00D086E9 /* MBStackViewController.h */,
-				4A8A797124A351EF00D086E9 /* MBStackViewController.m */,
+				4A8A797124A351EF00D086E9 /* MBStackViewController.mm */,
 				4A8A797224A351EF00D086E9 /* MBStackViewController.xib */,
 			);
 			path = "栈";
 			sourceTree = "<group>";
 		};
-		4A8A796F24A351BC00D086E9 /* 堆 */ = {
+		4A8A796F24A351BC00D086E9 /* 队列 */ = {
 			isa = PBXGroup;
 			children = (
-				4A8A797524A3526300D086E9 /* MBHeapViewController.h */,
-				4A8A797624A3526300D086E9 /* MBHeapViewController.m */,
-				4A8A797724A3526300D086E9 /* MBHeapViewController.xib */,
+				4A8A797524A3526300D086E9 /* MBQueueViewController.h */,
+				4A8A797624A3526300D086E9 /* MBQueueViewController.mm */,
+				4A8A797724A3526300D086E9 /* MBQueueViewController.xib */,
 			);
-			path = "堆";
+			path = "队列";
 			sourceTree = "<group>";
 		};
 		4AD24F1F249A334E0004FBA4 /* 单链表 */ = {
@@ -236,7 +236,7 @@
 				4A82A2062497A10F00CD3B5A /* LaunchScreen.storyboard in Resources */,
 				4A82A2032497A10F00CD3B5A /* Assets.xcassets in Resources */,
 				4A8A797424A351EF00D086E9 /* MBStackViewController.xib in Resources */,
-				4A8A797924A3526300D086E9 /* MBHeapViewController.xib in Resources */,
+				4A8A797924A3526300D086E9 /* MBQueueViewController.xib in Resources */,
 				4A82A2012497A10A00CD3B5A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,11 +249,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A82A1FE2497A10A00CD3B5A /* ViewController.m in Sources */,
-				4A8A797824A3526300D086E9 /* MBHeapViewController.m in Sources */,
+				4A8A797824A3526300D086E9 /* MBQueueViewController.mm in Sources */,
 				4A82A2112497AA1400CD3B5A /* MBSequenceListViewController.m in Sources */,
 				4A8A796B24A3450000D086E9 /* MBBinaryTreeViewController.m in Sources */,
 				4AD263AA249B984A0004FBA4 /* MBDoubleLinkListViewController.m in Sources */,
-				4A8A797324A351EF00D086E9 /* MBStackViewController.m in Sources */,
+				4A8A797324A351EF00D086E9 /* MBStackViewController.mm in Sources */,
 				4A82A1F82497A10A00CD3B5A /* AppDelegate.m in Sources */,
 				4A82A2092497A10F00CD3B5A /* main.m in Sources */,
 				4AD24F23249A33D90004FBA4 /* MBSingleLinkListViewController.m in Sources */,

@@ -1,5 +1,5 @@
 //
-//  MBHeapViewController.h
+//  MBQueueViewController.h
 //  DataStructure
 //
 //  Created by Bowen on 2020/6/24.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MBHeapViewController : UIViewController
+@interface MBQueueViewController : UIViewController
 
 @end
 
