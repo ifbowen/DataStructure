@@ -16,7 +16,7 @@
 		4A82A2092497A10F00CD3B5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A82A2082497A10F00CD3B5A /* main.m */; };
 		4A82A2112497AA1400CD3B5A /* MBSequenceListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A82A2102497AA1400CD3B5A /* MBSequenceListViewController.m */; };
 		4A82A2132497AADF00CD3B5A /* MBSequenceListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A82A2122497AADF00CD3B5A /* MBSequenceListViewController.xib */; };
-		4A8A796B24A3450000D086E9 /* MBBinaryTreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8A796A24A3450000D086E9 /* MBBinaryTreeViewController.m */; };
+		4A8A796B24A3450000D086E9 /* MBBinaryTreeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A8A796A24A3450000D086E9 /* MBBinaryTreeViewController.mm */; };
 		4A8A796D24A3452200D086E9 /* MBBinaryTreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8A796C24A3452200D086E9 /* MBBinaryTreeViewController.xib */; };
 		4A8A797324A351EF00D086E9 /* MBStackViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A8A797124A351EF00D086E9 /* MBStackViewController.mm */; };
 		4A8A797424A351EF00D086E9 /* MBStackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8A797224A351EF00D086E9 /* MBStackViewController.xib */; };
@@ -47,7 +47,7 @@
 		4A82A2102497AA1400CD3B5A /* MBSequenceListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBSequenceListViewController.m; sourceTree = "<group>"; };
 		4A82A2122497AADF00CD3B5A /* MBSequenceListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBSequenceListViewController.xib; sourceTree = "<group>"; };
 		4A8A796924A3450000D086E9 /* MBBinaryTreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBBinaryTreeViewController.h; sourceTree = "<group>"; };
-		4A8A796A24A3450000D086E9 /* MBBinaryTreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBBinaryTreeViewController.m; sourceTree = "<group>"; };
+		4A8A796A24A3450000D086E9 /* MBBinaryTreeViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MBBinaryTreeViewController.mm; sourceTree = "<group>"; };
 		4A8A796C24A3452200D086E9 /* MBBinaryTreeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBBinaryTreeViewController.xib; sourceTree = "<group>"; };
 		4A8A797024A351EF00D086E9 /* MBStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBStackViewController.h; sourceTree = "<group>"; };
 		4A8A797124A351EF00D086E9 /* MBStackViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MBStackViewController.mm; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				4A8A796924A3450000D086E9 /* MBBinaryTreeViewController.h */,
-				4A8A796A24A3450000D086E9 /* MBBinaryTreeViewController.m */,
+				4A8A796A24A3450000D086E9 /* MBBinaryTreeViewController.mm */,
 				4A8A796C24A3452200D086E9 /* MBBinaryTreeViewController.xib */,
 			);
 			path = "二叉树";
@@ -268,7 +268,7 @@
 				4A82A1FE2497A10A00CD3B5A /* ViewController.m in Sources */,
 				4A8A797824A3526300D086E9 /* MBQueueViewController.mm in Sources */,
 				4A82A2112497AA1400CD3B5A /* MBSequenceListViewController.m in Sources */,
-				4A8A796B24A3450000D086E9 /* MBBinaryTreeViewController.m in Sources */,
+				4A8A796B24A3450000D086E9 /* MBBinaryTreeViewController.mm in Sources */,
 				4AD263AA249B984A0004FBA4 /* MBDoubleLinkListViewController.m in Sources */,
 				4A8A797324A351EF00D086E9 /* MBStackViewController.mm in Sources */,
 				4A82A1F82497A10A00CD3B5A /* AppDelegate.m in Sources */,

@@ -13,6 +13,7 @@
 #import "MBBinaryTreeViewController.h"
 #import "MBQueueViewController.h"
 #import "MBStackViewController.h"
+#import "MBStringViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -95,6 +96,10 @@
         vc.navigationItem.title = @"栈";
     }
     if (indexPath.row == 5) {
+        vc = [[MBStringViewController alloc] init];
+        vc.navigationItem.title = @"串";
+    }
+    if (indexPath.row == 6) {
         vc = [[MBBinaryTreeViewController alloc] init];
         vc.navigationItem.title = @"二叉树";
     }
