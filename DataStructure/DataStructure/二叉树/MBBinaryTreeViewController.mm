@@ -107,6 +107,9 @@ void pop(LinkStack * &s)
 
 BTNode* top(LinkStack * &s)
 {
+    if (s->next == NULL) {
+        return NULL;
+    }
     return s->next->data;
 }
 
