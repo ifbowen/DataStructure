@@ -34,7 +34,9 @@
     createBTree(b,"A(B(D(,G)),C(E,F))");
     postOrder2(b);
 
-//    char *string = "ABD#G###CE##F##";
+    char *string = "ABD#G###CE##F##";
+    BTNode *root = createBTree1(string);
+    dispBTree(root);
     
 }
 
@@ -67,9 +69,78 @@ BTNode* createNode(char data)
     return node;
 }
 
-void createBTree1(BTNode * &root,char *str)    //创建二叉树
-{
+typedef struct StackNode {
+    BTNode *data;
+    struct StackNode *next;
+} LinkStack;
 
+void initStack(LinkStack * &s)
+{
+    s = (LinkStack *)malloc(sizeof(LinkStack));
+    s->next = NULL;
+}
+
+BOOL isEmptyStack(LinkStack * &s)
+{
+    return s->next == NULL;
+}
+
+void push(LinkStack * &s, BTNode *data)
+{
+    LinkStack *p;
+    p = (LinkStack *)malloc(sizeof(LinkStack));
+    p->data = data;
+    p->next = s->next;
+    s->next = p;
+}
+
+void pop(LinkStack * &s)
+{
+    LinkStack *p;
+    if (s->next == NULL) {
+        return;
+    }
+    p = s->next;
+    s->next = p->next;
+    free(p);
+}
+
+BTNode* top(LinkStack * &s)
+{
+    return s->next->data;
+}
+
+BTNode* createBTree1(char *str)
+{
+    BTNode* root = createNode(str[0]);
+    StackNode *stk;
+    initStack(stk);
+    push(stk, root);
+    int idx = 1;
+    while (!isEmptyStack(stk)) {
+        if (top(stk)->lchild == NULL && str[idx - 1] != '#') {
+            if (str[idx] != '#') {
+                BTNode* left = createNode(str[idx]);
+                top(stk)->lchild = left;
+                push(stk, left);
+            }
+            idx++;
+        } else {
+            if (top(stk)->rchild == NULL) {
+                if (str[idx] != '#') {
+                    BTNode* right = createNode(str[idx]);
+                    top(stk)->rchild = right;
+                    push(stk, right);
+                } else {
+                    pop(stk);
+                }
+                idx++;
+            } else {
+                pop(stk);
+            }
+        }
+    }
+    return root;
 }
 
 void createBTree(BTNode * &b,char *str)    //创建二叉树
@@ -112,19 +183,21 @@ void createBTree(BTNode * &b,char *str)    //创建二叉树
 
 void destroyBTree(BTNode *&b)
 {
-    if (b!=NULL) {
-        destroyBTree(b->lchild);
-        destroyBTree(b->rchild);
-        free(b);
+    if (b == NULL) {
+        return;
     }
+    destroyBTree(b->lchild);
+    destroyBTree(b->rchild);
+    free(b);
 }
 
 BTNode *findNode(BTNode *b,char x)
 {
-    BTNode *p;
-    if (b==NULL) {
+    if (b == NULL) {
         return NULL;
-    } else if (b->data==x) {
+    }
+    BTNode *p;
+    if (b->data==x) {
         return b;
     } else {
         p=findNode(b->lchild,x);
@@ -138,27 +211,27 @@ BTNode *findNode(BTNode *b,char x)
 
 int getHeight(BTNode *b)
 {
-    int lchildh,rchildh;
     if (b==NULL) {
         return(0);                 //空树的高度为0
-    } else {
-        lchildh=getHeight(b->lchild);    //求左子树的高度为lchildh
-        rchildh=getHeight(b->rchild);    //求右子树的高度为rchildh
-        return (lchildh>rchildh)? (lchildh+1):(rchildh+1);
     }
+    int lchildh,rchildh;
+    lchildh=getHeight(b->lchild);    //求左子树的高度为lchildh
+    rchildh=getHeight(b->rchild);    //求右子树的高度为rchildh
+    return (lchildh>rchildh)? (lchildh+1):(rchildh+1);
 }
 
 void dispBTree(BTNode *b)
 {
-    if (b!=NULL) {
-        printf("%c",b->data);
-        if (b->lchild!=NULL || b->rchild!=NULL){
-            printf("(");                         //有孩子节点时才输出(
-            dispBTree(b->lchild);                //递归处理左子树
-            if (b->rchild!=NULL) printf(",");    //有右孩子节点时才输出,
-            dispBTree(b->rchild);                //递归处理右子树
-            printf(")");                         //有孩子节点时才输出)
-        }
+    if (b == NULL) {
+        return;
+    }
+    printf("%c",b->data);
+    if (b->lchild!=NULL || b->rchild!=NULL) {
+        printf("(");                         //有孩子节点时才输出(
+        dispBTree(b->lchild);                //递归处理左子树
+        if (b->rchild!=NULL) printf(",");    //有右孩子节点时才输出,
+        dispBTree(b->rchild);                //递归处理右子树
+        printf(")");                         //有孩子节点时才输出)
     }
 }
 
