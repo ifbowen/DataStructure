@@ -31,11 +31,12 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     BTNode *b;
-    createBTree(b,"A(B(D(,G)),C(E,F))");
+    char str1[] = "A(B(D(,G)),C(E,F))";
+    createBTree(b,str1);
     postOrder2(b);
 
-    char *string = "ABD#G###CE##F##";
-    BTNode *root = createBTree1(string);
+    char str2[] = "ABD#G###CE##F##";
+    BTNode *root = createBTree1(str2);
     dispBTree(root);
     
 }
