@@ -34,6 +34,7 @@
     char str1[] = "A(B(D(,G)),C(E,F))";
     createBTree(b,str1);
     postOrder2(b);
+    inOrder1(b);
 
     char str2[] = "ABD#G###CE##F##";
     BTNode *root = createBTree1(str2);

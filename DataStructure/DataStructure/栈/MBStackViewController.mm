@@ -29,11 +29,13 @@
 
 void testStack()
 {
-    SequenceStack *s;
-    initSequenceStack(s);
-    pushSequenceStack(s, 10);
+    LinkStack *s;
+    initLinkStack(s);
+    pushLinkStack(s, 10);
+    pushLinkStack(s, 20);
     int data;
-    popSequenceStack(s, data);
+    popLinkStack(s, data);
+    printf("%d\n", data);
 }
 
 typedef struct {
