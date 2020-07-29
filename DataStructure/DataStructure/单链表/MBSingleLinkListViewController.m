@@ -113,7 +113,13 @@ void centerNodeOfSingleLinkList(LinkList *list)
     printf("中间节点：%d\n", slowNode->value);
 }
 
-// https://mp.weixin.qq.com/s/lVrQnCMbbbHD8eHpApeg3g
+/*
+ https://mp.weixin.qq.com/s/lVrQnCMbbbHD8eHpApeg3g
+ fathNode的偏移速度是slowNode的两倍
+ 当两点相交时,我们有以下的结论,fathNode走过的路程为L + (C + A) + A,slowNode走过的路程为L + A,
+ 我们得出 (L + A) x 2 = L + (C + A) + A;
+ 所以L = C
+ */
 void isLoopSingleLinkList(LinkList *list)
 {
     int length = 0;
