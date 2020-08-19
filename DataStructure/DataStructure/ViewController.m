@@ -14,6 +14,7 @@
 #import "MBQueueViewController.h"
 #import "MBStackViewController.h"
 #import "MBStringViewController.h"
+#import "MBSortAlgorithmViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -39,7 +40,7 @@
 
 - (void)setupData
 {
-    self.tableArray = @[@"顺序表", @"单链表", @"双链表", @"队列", @"栈", @"串", @"二叉树"];
+    self.tableArray = @[@"顺序表", @"单链表", @"双链表", @"队列", @"栈", @"串", @"二叉树", @"排序"];
 }
 
 - (void)setupUI
@@ -102,6 +103,10 @@
     if (indexPath.row == 6) {
         vc = [[MBBinaryTreeViewController alloc] init];
         vc.navigationItem.title = @"二叉树";
+    }
+    if (indexPath.row == 7) {
+        vc = [[MBSortAlgorithmViewController alloc] init];
+        vc.navigationItem.title = @"排序算法";
     }
     
     [self.navigationController pushViewController:vc animated:YES];
