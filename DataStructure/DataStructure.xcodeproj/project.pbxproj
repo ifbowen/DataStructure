@@ -27,6 +27,8 @@
 		4AD24F24249A33D90004FBA4 /* MBSingleLinkListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AD24F22249A33D90004FBA4 /* MBSingleLinkListViewController.xib */; };
 		4AD263AA249B984A0004FBA4 /* MBDoubleLinkListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD263A9249B984A0004FBA4 /* MBDoubleLinkListViewController.m */; };
 		4AD263AC249B98EF0004FBA4 /* MBDoubleLinkListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AD263AB249B98EF0004FBA4 /* MBDoubleLinkListViewController.xib */; };
+		4AE94D5224EFEFB20072B26C /* MBCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE94D5124EFEFB20072B26C /* MBCacheViewController.m */; };
+		4AE94D5524EFEFC70072B26C /* MBLRUCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE94D5424EFEFC70072B26C /* MBLRUCache.m */; };
 		4AE9FB2924ED4B2A0072B26C /* MBSortAlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9FB2824ED4B2A0072B26C /* MBSortAlgorithmViewController.m */; };
 		F367DEE724A50ECB002556F0 /* MBStringViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F367DEE624A50ECB002556F0 /* MBStringViewController.mm */; };
 		F367DEE924A50EED002556F0 /* MBStringViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F367DEE824A50EED002556F0 /* MBStringViewController.xib */; };
@@ -64,6 +66,10 @@
 		4AD263A8249B984A0004FBA4 /* MBDoubleLinkListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBDoubleLinkListViewController.h; sourceTree = "<group>"; };
 		4AD263A9249B984A0004FBA4 /* MBDoubleLinkListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBDoubleLinkListViewController.m; sourceTree = "<group>"; };
 		4AD263AB249B98EF0004FBA4 /* MBDoubleLinkListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBDoubleLinkListViewController.xib; sourceTree = "<group>"; };
+		4AE94D5024EFEFB20072B26C /* MBCacheViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBCacheViewController.h; sourceTree = "<group>"; };
+		4AE94D5124EFEFB20072B26C /* MBCacheViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBCacheViewController.m; sourceTree = "<group>"; };
+		4AE94D5324EFEFC70072B26C /* MBLRUCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBLRUCache.h; sourceTree = "<group>"; };
+		4AE94D5424EFEFC70072B26C /* MBLRUCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBLRUCache.m; sourceTree = "<group>"; };
 		4AE9FB2724ED4B2A0072B26C /* MBSortAlgorithmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBSortAlgorithmViewController.h; sourceTree = "<group>"; };
 		4AE9FB2824ED4B2A0072B26C /* MBSortAlgorithmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBSortAlgorithmViewController.m; sourceTree = "<group>"; };
 		F367DEE524A50ECB002556F0 /* MBStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBStringViewController.h; sourceTree = "<group>"; };
@@ -107,6 +113,7 @@
 				4A82A1FA2497A10A00CD3B5A /* SceneDelegate.m */,
 				4A82A1FC2497A10A00CD3B5A /* ViewController.h */,
 				4A82A1FD2497A10A00CD3B5A /* ViewController.m */,
+				4AE94D4F24EFEF890072B26C /* 缓存 */,
 				4AE9FB2624ED4AB30072B26C /* 排序 */,
 				4A82A5922497B1FC00CD3B5A /* 顺序表 */,
 				4AD24F1F249A334E0004FBA4 /* 单链表 */,
@@ -183,6 +190,17 @@
 				4AD263AB249B98EF0004FBA4 /* MBDoubleLinkListViewController.xib */,
 			);
 			path = "双链表";
+			sourceTree = "<group>";
+		};
+		4AE94D4F24EFEF890072B26C /* 缓存 */ = {
+			isa = PBXGroup;
+			children = (
+				4AE94D5024EFEFB20072B26C /* MBCacheViewController.h */,
+				4AE94D5124EFEFB20072B26C /* MBCacheViewController.m */,
+				4AE94D5324EFEFC70072B26C /* MBLRUCache.h */,
+				4AE94D5424EFEFC70072B26C /* MBLRUCache.m */,
+			);
+			path = "缓存";
 			sourceTree = "<group>";
 		};
 		4AE9FB2624ED4AB30072B26C /* 排序 */ = {
@@ -282,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE94D5224EFEFB20072B26C /* MBCacheViewController.m in Sources */,
 				4A82A1FE2497A10A00CD3B5A /* ViewController.m in Sources */,
 				4A8A797824A3526300D086E9 /* MBQueueViewController.mm in Sources */,
 				4A82A2112497AA1400CD3B5A /* MBSequenceListViewController.m in Sources */,
@@ -294,6 +313,7 @@
 				4A82A1FB2497A10A00CD3B5A /* SceneDelegate.m in Sources */,
 				F367DEE724A50ECB002556F0 /* MBStringViewController.mm in Sources */,
 				4AE9FB2924ED4B2A0072B26C /* MBSortAlgorithmViewController.m in Sources */,
+				4AE94D5524EFEFC70072B26C /* MBLRUCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
