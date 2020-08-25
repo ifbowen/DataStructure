@@ -20,7 +20,8 @@
 
  -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    testStack();
+//    testStack();
+    testStackQueue();
 }
 
 /// 先进后出
@@ -126,6 +127,57 @@ void popLinkStack(LinkStack * &s, int &value)
     value = p->data;
     s->next = p->next;
     free(p);
+}
+
+#pragma mark - 两个栈实现队列
+
+void testStackQueue()
+{
+    StackQueue *sq;
+    initStackQueue(sq);
+    enStackQueue(sq, 1);
+    enStackQueue(sq, 2);
+    enStackQueue(sq, 3);
+    deStackQueue(sq);
+    enStackQueue(sq, 4);
+    deStackQueue(sq);
+}
+
+typedef struct {
+    SequenceStack *stack1;
+    SequenceStack *stack2;
+} StackQueue;
+
+void initStackQueue(StackQueue *&sq)
+{
+    sq = (StackQueue *)malloc(sizeof(StackQueue));
+    initSequenceStack(sq->stack1);
+    initSequenceStack(sq->stack2);
+}
+
+void enStackQueue(StackQueue *&sq, int data)
+{
+    SequenceStack *stack1 = sq->stack1;
+    SequenceStack *stack2 = sq->stack2;
+    while (!isEmptySequenceStack(stack1)) {
+        int value = NULL;
+        popSequenceStack(stack1, value);
+        pushSequenceStack(stack2, value);
+    }
+    pushSequenceStack(stack1, data);
+    while (!isEmptySequenceStack(stack2)) {
+        int value = NULL;
+        popSequenceStack(stack2, value);
+        pushSequenceStack(stack1, value);
+    }
+}
+
+int deStackQueue(StackQueue *&sq)
+{
+    int data;
+    popSequenceStack(sq->stack1, data);
+    NSLog(@"%d", data);
+    return data;
 }
 
 
