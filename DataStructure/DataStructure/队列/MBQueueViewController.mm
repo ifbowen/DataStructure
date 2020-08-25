@@ -22,7 +22,8 @@ const int kLengthQueue = 10;
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    testQueue();
+    //    testQueue();
+    testQueueStack();
 }
 
 void testQueue()
@@ -30,6 +31,7 @@ void testQueue()
     SequenceQueue *q;
     initSequenceQueue(q);
 }
+
 
 #pragma mark - 队列的线性存储
 
@@ -74,6 +76,7 @@ void deSequenceQueue(SequenceQueue * &q, int &value)
     value = q->data[q->top];
 }
 
+
 #pragma mark - 环形队列
 
 typedef struct {
@@ -116,6 +119,7 @@ void deCicleQueue(CicleQueue * &q, int &value)
     q->top = (q->top + 1) % kLengthQueue;
     value = q->data[q->top];
 }
+
 
 #pragma mark - 队列的链式存储
 
@@ -189,5 +193,69 @@ void deLinkQueue(LinkQueue * &q, int &value)
     free(t);
 }
 
+
+#pragma mark - 两个队列实现栈
+
+void testQueueStack()
+{
+    QueueStack *qs;
+    initQueueStack(qs);
+    pushQueueStack(qs, 1);
+    pushQueueStack(qs, 2);
+    pushQueueStack(qs, 3);
+    popQueueStack(qs);
+    pushQueueStack(qs, 4);
+    popQueueStack(qs);
+    popQueueStack(qs);
+}
+
+typedef struct {
+    SequenceQueue *queue1;
+    SequenceQueue *queue2;
+} QueueStack;
+
+void initQueueStack(QueueStack *&qs)
+{
+    qs = (QueueStack *)malloc(sizeof(QueueStack));
+    initSequenceQueue(qs->queue1);
+    initSequenceQueue(qs->queue2);
+}
+
+void pushQueueStack(QueueStack *&qs, int data)
+{
+    SequenceQueue *queue = NULL;
+    if (!isEmptySequenceQueue(qs->queue1)) {
+        queue = qs->queue1;
+    } else {
+        queue = qs->queue2;
+    }
+    enSequenceQueue(queue, data);
+}
+
+int popQueueStack(QueueStack *&qs)
+{
+    int data = NULL;
+    
+    SequenceQueue *enQueue = NULL;
+    SequenceQueue *deQueue = NULL;
+    
+    if (!isEmptySequenceQueue(qs->queue1)) {
+        deQueue = qs->queue1;
+        enQueue = qs->queue2;
+    } else {
+        deQueue = qs->queue2;
+        enQueue = qs->queue1;
+    }
+    
+    while (!isEmptySequenceQueue(deQueue)) {
+        deSequenceQueue(deQueue, data);
+        if (!isEmptySequenceQueue(deQueue)) {
+            enSequenceQueue(enQueue, data);
+        }
+    }
+    
+    NSLog(@"%d", data);
+    return data;
+}
 
 @end
