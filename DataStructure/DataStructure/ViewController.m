@@ -15,6 +15,8 @@
 #import "MBStackViewController.h"
 #import "MBStringViewController.h"
 #import "MBSortAlgorithmViewController.h"
+#import "MBLowestCommonAncestorViewController.h"
+#import "MBDynamicProgrammingViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -40,7 +42,7 @@
 
 - (void)setupData
 {
-    self.tableArray = @[@"顺序表", @"单链表", @"双链表", @"队列", @"栈", @"串", @"二叉树", @"排序"];
+    self.tableArray = @[@"顺序表", @"单链表", @"双链表", @"队列", @"栈", @"串", @"二叉树", @"排序", @"最近公共祖先", @"动态规划"];
 }
 
 - (void)setupUI
@@ -107,6 +109,14 @@
     if (indexPath.row == 7) {
         vc = [[MBSortAlgorithmViewController alloc] init];
         vc.navigationItem.title = @"排序算法";
+    }
+    if (indexPath.row == 8) {
+        vc = [[MBLowestCommonAncestorViewController alloc] init];
+        vc.navigationItem.title = @"最近公共祖先";
+    }
+    if (indexPath.row == 9) {
+        vc = [[MBDynamicProgrammingViewController alloc] init];
+        vc.navigationItem.title = @"动态规划";
     }
     
     [self.navigationController pushViewController:vc animated:YES];
