@@ -14,9 +14,14 @@
 
 @implementation MBBinaryTreeViewController
 
+/**
+ 深度优先遍历（Depth-First-Search，缩写为 DFS）：先序遍历，中序遍历，后续遍历
+ 广度优先遍历（Breadth-First-Search，缩写为 BFS）：层次遍历
+ BFS 的重点在于队列，而 DFS 的重点在于递归。这是它们的本质区别。
+ */
+ 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    
 }
 
 /*

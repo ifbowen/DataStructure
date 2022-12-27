@@ -31,7 +31,7 @@
 		4AE94D5524EFEFC70072B26C /* MBLRUCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE94D5424EFEFC70072B26C /* MBLRUCache.m */; };
 		4AE9FB2924ED4B2A0072B26C /* MBSortAlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9FB2824ED4B2A0072B26C /* MBSortAlgorithmViewController.m */; };
 		C2849F0729597E01009997F0 /* MBLowestCommonAncestorViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C2849F0629597E01009997F0 /* MBLowestCommonAncestorViewController.mm */; };
-		C2849F0A29597E48009997F0 /* MBDynamicProgrammingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2849F0929597E48009997F0 /* MBDynamicProgrammingViewController.m */; };
+		C2849F0A29597E48009997F0 /* MBDynamicProgrammingViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C2849F0929597E48009997F0 /* MBDynamicProgrammingViewController.mm */; };
 		F367DEE724A50ECB002556F0 /* MBStringViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F367DEE624A50ECB002556F0 /* MBStringViewController.mm */; };
 		F367DEE924A50EED002556F0 /* MBStringViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F367DEE824A50EED002556F0 /* MBStringViewController.xib */; };
 /* End PBXBuildFile section */
@@ -77,7 +77,7 @@
 		C2849F0529597E01009997F0 /* MBLowestCommonAncestorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBLowestCommonAncestorViewController.h; sourceTree = "<group>"; };
 		C2849F0629597E01009997F0 /* MBLowestCommonAncestorViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MBLowestCommonAncestorViewController.mm; sourceTree = "<group>"; };
 		C2849F0829597E48009997F0 /* MBDynamicProgrammingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBDynamicProgrammingViewController.h; sourceTree = "<group>"; };
-		C2849F0929597E48009997F0 /* MBDynamicProgrammingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBDynamicProgrammingViewController.m; sourceTree = "<group>"; };
+		C2849F0929597E48009997F0 /* MBDynamicProgrammingViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MBDynamicProgrammingViewController.mm; sourceTree = "<group>"; };
 		C2849F0C2959B702009997F0 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		F367DEE524A50ECB002556F0 /* MBStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBStringViewController.h; sourceTree = "<group>"; };
 		F367DEE624A50ECB002556F0 /* MBStringViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MBStringViewController.mm; sourceTree = "<group>"; };
@@ -235,7 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				C2849F0829597E48009997F0 /* MBDynamicProgrammingViewController.h */,
-				C2849F0929597E48009997F0 /* MBDynamicProgrammingViewController.m */,
+				C2849F0929597E48009997F0 /* MBDynamicProgrammingViewController.mm */,
 			);
 			path = "动态规划";
 			sourceTree = "<group>";
@@ -341,7 +341,7 @@
 				C2849F0729597E01009997F0 /* MBLowestCommonAncestorViewController.mm in Sources */,
 				4A8A797824A3526300D086E9 /* MBQueueViewController.mm in Sources */,
 				4A82A2112497AA1400CD3B5A /* MBSequenceListViewController.m in Sources */,
-				C2849F0A29597E48009997F0 /* MBDynamicProgrammingViewController.m in Sources */,
+				C2849F0A29597E48009997F0 /* MBDynamicProgrammingViewController.mm in Sources */,
 				4A8A796B24A3450000D086E9 /* MBBinaryTreeViewController.mm in Sources */,
 				4AD263AA249B984A0004FBA4 /* MBDoubleLinkListViewController.m in Sources */,
 				4A8A797324A351EF00D086E9 /* MBStackViewController.mm in Sources */,
