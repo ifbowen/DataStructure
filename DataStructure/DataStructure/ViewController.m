@@ -17,6 +17,7 @@
 #import "MBSortAlgorithmViewController.h"
 #import "MBLowestCommonAncestorViewController.h"
 #import "MBDynamicProgrammingViewController.h"
+#import "MBBacktrackViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -42,7 +43,7 @@
 
 - (void)setupData
 {
-    self.tableArray = @[@"顺序表", @"单链表", @"双链表", @"队列", @"栈", @"串", @"二叉树", @"排序", @"最近公共祖先", @"动态规划与递归算法", @"迭代算法", @"分治法", @"贪心算法", @"回溯法", @"分支限界法"];
+    self.tableArray = @[@"顺序表", @"单链表", @"双链表", @"队列", @"栈", @"串", @"二叉树", @"排序", @"最近公共祖先", @"动态规划与递归算法", @"回溯算法和DFS", @"迭代算法", @"分治法", @"贪心算法", @"分支限界法"];
 }
 
 - (void)setupUI
@@ -116,7 +117,11 @@
     }
     if (indexPath.row == 9) {
         vc = [[MBDynamicProgrammingViewController alloc] init];
-        vc.navigationItem.title = @"动态规划";
+        vc.navigationItem.title = @"动态规划与递归算法";
+    }
+    if (indexPath.row == 10) {
+        vc = [[MBBacktrackViewController alloc] init];
+        vc.navigationItem.title = @"回溯算法";
     }
     
     [self.navigationController pushViewController:vc animated:YES];
