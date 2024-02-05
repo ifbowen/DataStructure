@@ -32,6 +32,7 @@
 		4AE9FB2924ED4B2A0072B26C /* MBSortAlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9FB2824ED4B2A0072B26C /* MBSortAlgorithmViewController.m */; };
 		C2849F0729597E01009997F0 /* MBLowestCommonAncestorViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C2849F0629597E01009997F0 /* MBLowestCommonAncestorViewController.mm */; };
 		C2849F0A29597E48009997F0 /* MBDynamicProgrammingViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C2849F0929597E48009997F0 /* MBDynamicProgrammingViewController.mm */; };
+		C2DCC8C92B52C77F00BECD88 /* MBGreedyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DCC8C82B52C77F00BECD88 /* MBGreedyViewController.m */; };
 		C2DECDA92B4AB7FD00CEF9BC /* MBBacktrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DECDA82B4AB7FD00CEF9BC /* MBBacktrackViewController.m */; };
 		F367DEE724A50ECB002556F0 /* MBStringViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F367DEE624A50ECB002556F0 /* MBStringViewController.mm */; };
 		F367DEE924A50EED002556F0 /* MBStringViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F367DEE824A50EED002556F0 /* MBStringViewController.xib */; };
@@ -80,6 +81,8 @@
 		C2849F0829597E48009997F0 /* MBDynamicProgrammingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBDynamicProgrammingViewController.h; sourceTree = "<group>"; };
 		C2849F0929597E48009997F0 /* MBDynamicProgrammingViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MBDynamicProgrammingViewController.mm; sourceTree = "<group>"; };
 		C2849F0C2959B702009997F0 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		C2DCC8C72B52C77F00BECD88 /* MBGreedyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBGreedyViewController.h; sourceTree = "<group>"; };
+		C2DCC8C82B52C77F00BECD88 /* MBGreedyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBGreedyViewController.m; sourceTree = "<group>"; };
 		C2DECDA72B4AB7FD00CEF9BC /* MBBacktrackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBBacktrackViewController.h; sourceTree = "<group>"; };
 		C2DECDA82B4AB7FD00CEF9BC /* MBBacktrackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBBacktrackViewController.m; sourceTree = "<group>"; };
 		F367DEE524A50ECB002556F0 /* MBStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBStringViewController.h; sourceTree = "<group>"; };
@@ -124,6 +127,7 @@
 				4A82A1FA2497A10A00CD3B5A /* SceneDelegate.m */,
 				4A82A1FC2497A10A00CD3B5A /* ViewController.h */,
 				4A82A1FD2497A10A00CD3B5A /* ViewController.m */,
+				C2DCC8C62B52C74200BECD88 /* 贪心算法 */,
 				C2DECDA62B4AB7D900CEF9BC /* 回溯算法 */,
 				C2849F0429597CF4009997F0 /* 动态规划 */,
 				C2849F0329597CD9009997F0 /* 最近公共祖先 */,
@@ -252,6 +256,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C2DCC8C62B52C74200BECD88 /* 贪心算法 */ = {
+			isa = PBXGroup;
+			children = (
+				C2DCC8C72B52C77F00BECD88 /* MBGreedyViewController.h */,
+				C2DCC8C82B52C77F00BECD88 /* MBGreedyViewController.m */,
+			);
+			path = "贪心算法";
+			sourceTree = "<group>";
+		};
 		C2DECDA62B4AB7D900CEF9BC /* 回溯算法 */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,6 +365,7 @@
 				4AE94D5224EFEFB20072B26C /* MBCacheViewController.m in Sources */,
 				4A82A1FE2497A10A00CD3B5A /* ViewController.m in Sources */,
 				C2849F0729597E01009997F0 /* MBLowestCommonAncestorViewController.mm in Sources */,
+				C2DCC8C92B52C77F00BECD88 /* MBGreedyViewController.m in Sources */,
 				4A8A797824A3526300D086E9 /* MBQueueViewController.mm in Sources */,
 				4A82A2112497AA1400CD3B5A /* MBSequenceListViewController.m in Sources */,
 				C2849F0A29597E48009997F0 /* MBDynamicProgrammingViewController.mm in Sources */,
